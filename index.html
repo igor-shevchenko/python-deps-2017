@@ -157,6 +157,112 @@ urllib3==1.22</code>
 		<img src="images/lock.svg" height="450" class="cover place bottom">
 	</section>
 
+	<section class="slide">
+		<h2>Проблема 3: граф зависимостей</h2>
+		<svg width="568pt" height="288pt" viewBox="0.00 0.00 568.22 288.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="graph1" class="graph" transform="scale(0.972973 0.972973) rotate(0) translate(4 292)">
+			<title>prof</title>
+			<polygon fill="white" stroke="white" points="-4,5 -4,-292 581,-292 581,5 -4,5"></polygon>
+			<!-- app -->
+			<g id="node1" class="node"><title>app</title>
+			<polygon fill="none" stroke="black" points="251.335,-277 197.335,-277 197.335,-241 251.335,-241 251.335,-277"></polygon>
+			<text text-anchor="middle" x="224.335" y="-254.8" font-family="Times,serif" font-size="14.00">app</text>
+			</g>
+			<!-- django -->
+			<g id="node3" class="node"><title>django</title>
+			<polygon fill="none" stroke="black" points="130.414,-162 76.2563,-162 76.2563,-126 130.414,-126 130.414,-162"></polygon>
+			<text text-anchor="middle" x="103.335" y="-139.8" font-family="Times,serif" font-size="14.00">django</text>
+			</g>
+			<!-- app&#45;&gt;django -->
+			<g id="edge2" class="edge"><title>app-&gt;django</title>
+			<path fill="none" stroke="black" d="M205.958,-240.838C185.525,-221.756 152.367,-190.79 129.292,-169.24"></path>
+			<polygon fill="black" stroke="black" points="131.583,-166.591 121.886,-162.324 126.805,-171.707 131.583,-166.591"></polygon>
+			</g>
+			<!-- requests -->
+			<g id="node5" class="node"><title>requests</title>
+			<polygon fill="none" stroke="black" points="318.739,-162 257.932,-162 257.932,-126 318.739,-126 318.739,-162"></polygon>
+			<text text-anchor="middle" x="288.335" y="-139.8" font-family="Times,serif" font-size="14.00">requests</text>
+			</g>
+			<!-- app&#45;&gt;requests -->
+			<g id="edge4" class="edge"><title>app-&gt;requests</title>
+			<path fill="none" stroke="black" d="M234.055,-240.838C244.534,-222.337 261.34,-192.664 273.477,-171.233"></path>
+			<polygon fill="black" stroke="black" points="276.641,-172.75 278.524,-162.324 270.55,-169.3 276.641,-172.75"></polygon>
+			</g>
+			<!-- pytz -->
+			<g id="node7" class="node"><title>pytz</title>
+			<polygon fill="none" stroke="black" points="72.3353,-47 18.3353,-47 18.3353,-11 72.3353,-11 72.3353,-47"></polygon>
+			<text text-anchor="middle" x="45.3353" y="-24.8" font-family="Times,serif" font-size="14.00">pytz</text>
+			</g>
+			<!-- django&#45;&gt;pytz -->
+			<g id="edge6" class="edge"><title>django-&gt;pytz</title>
+			<path fill="none" stroke="black" d="M94.5263,-125.838C85.0302,-107.337 69.7998,-77.6638 58.8002,-56.2333"></path>
+			<polygon fill="black" stroke="black" points="61.9073,-54.6221 54.2271,-47.3238 55.6797,-57.8186 61.9073,-54.6221"></polygon>
+			</g>
+			<!-- certifi -->
+			<g id="node9" class="node"><title>certifi</title>
+			<polygon fill="none" stroke="black" points="191.335,-47 137.335,-47 137.335,-11 191.335,-11 191.335,-47"></polygon>
+			<text text-anchor="middle" x="164.335" y="-24.8" font-family="Times,serif" font-size="14.00">certifi</text>
+			</g>
+			<!-- requests&#45;&gt;certifi -->
+			<g id="edge8" class="edge"><title>requests-&gt;certifi</title>
+			<path fill="none" stroke="black" d="M269.502,-125.838C248.563,-106.756 214.583,-75.7899 190.935,-54.2402"></path>
+			<polygon fill="black" stroke="black" points="193.094,-51.4725 183.345,-47.3238 188.379,-56.6464 193.094,-51.4725"></polygon>
+			</g>
+			<!-- chardet -->
+			<g id="node11" class="node"><title>chardet</title>
+			<polygon fill="none" stroke="black" points="316.731,-47 259.94,-47 259.94,-11 316.731,-11 316.731,-47"></polygon>
+			<text text-anchor="middle" x="288.335" y="-24.8" font-family="Times,serif" font-size="14.00">chardet</text>
+			</g>
+			<!-- requests&#45;&gt;chardet -->
+			<g id="edge10" class="edge"><title>requests-&gt;chardet</title>
+			<path fill="none" stroke="black" d="M288.335,-125.838C288.335,-107.669 288.335,-78.7247 288.335,-57.3944"></path>
+			<polygon fill="black" stroke="black" points="291.835,-57.3237 288.335,-47.3238 284.835,-57.3238 291.835,-57.3237"></polygon>
+			</g>
+			<!-- idna -->
+			<g id="node13" class="node"><title>idna</title>
+			<polygon fill="none" stroke="black" points="438.335,-47 384.335,-47 384.335,-11 438.335,-11 438.335,-47"></polygon>
+			<text text-anchor="middle" x="411.335" y="-24.8" font-family="Times,serif" font-size="14.00">idna</text>
+			</g>
+			<!-- requests&#45;&gt;idna -->
+			<g id="edge12" class="edge"><title>requests-&gt;idna</title>
+			<path fill="none" stroke="black" d="M307.016,-125.838C327.787,-106.756 361.493,-75.7899 384.95,-54.2402"></path>
+			<polygon fill="black" stroke="black" points="387.482,-56.6666 392.478,-47.3238 382.746,-51.5118 387.482,-56.6666"></polygon>
+			</g>
+			<!-- urllib3 -->
+			<g id="node15" class="node"><title>urllib3</title>
+			<polygon fill="none" stroke="black" points="558.335,-47 504.335,-47 504.335,-11 558.335,-11 558.335,-47"></polygon>
+			<text text-anchor="middle" x="531.335" y="-24.8" font-family="Times,serif" font-size="14.00">urllib3</text>
+			</g>
+			<!-- requests&#45;&gt;urllib3 -->
+			<g id="edge14" class="edge"><title>requests-&gt;urllib3</title>
+			<path fill="none" stroke="black" d="M319.111,-128.688C363.916,-107.853 446.962,-69.2351 494.806,-46.9868"></path>
+			<polygon fill="black" stroke="black" points="496.578,-50.0231 504.169,-42.6328 493.626,-43.6758 496.578,-50.0231"></polygon>
+			</g>
+			</g>
+		</svg>
+
+		<!--digraph prof {
+        ratio=fill;
+        size="8,4";
+	app -> django;
+	app -> requests;
+    django -> pytz;
+    requests -> certifi;
+    requests -> chardet;
+    requests -> idna;
+    requests -> urllib3;
+
+    app [shape=box];
+    django [shape=box];
+    requests [shape=box];
+    pytz [shape=box];
+    certifi [shape=box];
+    chardet [shape=box];
+    idna [shape=box];
+    urllib3 [shape=box];
+} -->
+	</section>
+
 	<section class="slide" style="font-size: 30px;">
 		<h2>Проблема 3: все зависимости</h2>
 		<pre>
@@ -221,7 +327,73 @@ pytest==3.2.3</code></pre>
 	</section>
 
 	<section class="slide">
-		<img src="images/hell.jpeg" class="cover">
+		<h2>Проблема 5: конфликтующие зависимости</h2>
+		<svg width="568pt" height="288pt" viewBox="0.00 0.00 568.22 288.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<g id="graph1" class="graph" transform="scale(0.972973 0.972973) rotate(0) translate(4 292)">
+			<title>prof</title>
+			<polygon fill="white" stroke="white" points="-4,5 -4,-292 581,-292 581,5 -4,5"></polygon>
+			<!-- app -->
+			<g id="node1" class="node"><title>app</title>
+			<polygon fill="none" stroke="black" points="315.195,-277 261.195,-277 261.195,-241 315.195,-241 315.195,-277"></polygon>
+			<text text-anchor="middle" x="288.195" y="-254.8" font-family="Times,serif" font-size="14.00">app</text>
+			</g>
+			<!-- foo -->
+			<g id="node3" class="node"><title>foo</title>
+			<polygon fill="none" stroke="black" points="190.354,-162 76.0365,-162 76.0365,-126 190.354,-126 190.354,-162"></polygon>
+			<text text-anchor="middle" x="133.195" y="-139.8" font-family="Times,serif" font-size="14.00">foo-client==1.2.1</text>
+			</g>
+			<!-- app&#45;&gt;foo -->
+			<g id="edge2" class="edge"><title>app-&gt;foo</title>
+			<path fill="none" stroke="black" d="M264.654,-240.838C238.061,-221.451 194.642,-189.797 165.037,-168.214"></path>
+			<polygon fill="black" stroke="black" points="166.846,-165.201 156.703,-162.138 162.722,-170.858 166.846,-165.201"></polygon>
+			</g>
+			<!-- bar -->
+			<g id="node5" class="node"><title>bar</title>
+			<polygon fill="none" stroke="black" points="499.354,-162 385.036,-162 385.036,-126 499.354,-126 499.354,-162"></polygon>
+			<text text-anchor="middle" x="442.195" y="-139.8" font-family="Times,serif" font-size="14.00">foo-client==3.6.6</text>
+			</g>
+			<!-- app&#45;&gt;bar -->
+			<g id="edge4" class="edge"><title>app-&gt;bar</title>
+			<path fill="none" stroke="black" d="M311.584,-240.838C338.006,-221.451 381.145,-189.797 410.559,-168.214"></path>
+			<polygon fill="black" stroke="black" points="412.847,-170.876 418.839,-162.138 408.706,-165.232 412.847,-170.876"></polygon>
+			</g>
+			<!-- requests1 -->
+			<g id="node7" class="node"><title>requests1</title>
+			<polygon fill="none" stroke="black" points="185.441,-47 80.9491,-47 80.9491,-11 185.441,-11 185.441,-47"></polygon>
+			<text text-anchor="middle" x="133.195" y="-24.8" font-family="Times,serif" font-size="14.00">requests==2.3.1</text>
+			</g>
+			<!-- foo&#45;&gt;requests1 -->
+			<g id="edge6" class="edge"><title>foo-&gt;requests1</title>
+			<path fill="none" stroke="black" d="M133.195,-125.838C133.195,-107.669 133.195,-78.7247 133.195,-57.3944"></path>
+			<polygon fill="black" stroke="black" points="136.695,-57.3237 133.195,-47.3238 129.695,-57.3238 136.695,-57.3237"></polygon>
+			</g>
+			<!-- requests2 -->
+			<g id="node9" class="node"><title>requests2</title>
+			<polygon fill="none" stroke="black" points="494.441,-47 389.949,-47 389.949,-11 494.441,-11 494.441,-47"></polygon>
+			<text text-anchor="middle" x="442.195" y="-24.8" font-family="Times,serif" font-size="14.00">requests==2.5.2</text>
+			</g>
+			<!-- bar&#45;&gt;requests2 -->
+			<g id="edge8" class="edge"><title>bar-&gt;requests2</title>
+			<path fill="none" stroke="black" d="M442.195,-125.838C442.195,-107.669 442.195,-78.7247 442.195,-57.3944"></path>
+			<polygon fill="black" stroke="black" points="445.695,-57.3237 442.195,-47.3238 438.695,-57.3238 445.695,-57.3237"></polygon>
+			</g>
+			</g>
+			</svg>
+		<!--
+digraph prof {
+        ratio=fill;
+        size="8,4";
+	app -> foo;
+	app -> bar;
+        foo -> requests1;
+        bar -> requests2;
+
+    app [shape=box];
+    foo [shape=box, label="foo-client==1.2.1"];
+    bar[shape=box, label="foo-client==3.6.6"];
+    requests1[shape=box, label="requests==2.3.1"];
+    requests2[shape=box, label="requests==2.5.2"];
+} -->
 	</section>
 
 	<section class="slide">
