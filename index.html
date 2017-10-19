@@ -670,14 +670,11 @@ pywinusb = {version = "*", <mark>os_name = "== 'windows'"</mark>}</code></pre>
 
 	<section class="slide">
 		<h2>Условная установка</h2>
-		<pre style="font-size: 14px"><code>[[source]]
-url = "https://pypi.python.org/simple"
-verify_ssl = true
-name = "pypi"
-
-[packages]
-unittest2 = {version = ">=1.0,<3.0",
-             <mark>markers="python_version < '2.7.9' or (python_version >= '3.0' and python_version < '3.4')"</mark>}
+		<pre style="font-size: 25px"><code>[packages]
+unittest2 = {version = ">=1.0,<3.0", <mark>markers="""\
+	python_version < '2.7.9' or \
+	(python_version >= '3.0' and python_version < '3.4') \
+"""</mark>}
 </code></pre>
 	</section>
 
